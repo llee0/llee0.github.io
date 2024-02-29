@@ -33,7 +33,7 @@ baseurl: "/docs" # the subpath of your site, e.g. /blog
 
 # Build settings
 # theme: jekyll-theme-minimal - using remote_theme per minimal's readme instead
-remote_theme: remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-feed
 - jekyll-remote-theme # add this line to the plugins list if you already have one
