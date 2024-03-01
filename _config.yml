@@ -13,16 +13,26 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+locale: "en-US"
+title: "LZL Engineering"
+subtitle: "Particle Processing Solutions"
+name: "Leon Lee"
+email: info@lzlengineering.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
-search: true
+  American Midwest fluidized bed particle processing specialists providing research and development, toll processing, engineering, and industrial solutions.
+url: "https://lzlengineering.com"
+# baseurl: "/docs" # the subpath of your site, e.g. /blog
+# twitter_username: username
+# github_username: username
+minimal_mistakes_skin: "contrast" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+search: false
+# lunr:
+#   search_within_pages: true
+repository: llee0/llee0.github.io
+# teaser: /assets/images/500x300.png
+# logo: "/assets/images/88x88.png"
+masthead_title: "My Custom Title"
+# breadcrumbs: true  # disabled by default
 
 # Build settings
 markdown: kramdown
@@ -31,7 +41,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Chicago # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
@@ -95,17 +105,25 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
-      share: true
+      read_time: false
+      comments: false
+      share: false
       related: true
+      show_date: false
+      date_format: "%Y-%m-%d"
   # _pages
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
       layout: single
       author_profile: true
+  # _foo
+  - scope:
+      path: ""
+      type: foo
+    values:
+      layout: single
 
 category_archive:
   type: liquid
