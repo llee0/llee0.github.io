@@ -12,4 +12,4 @@ This is a test paragraph. Hellow World!
 
 Gibberish 123456
 
-[Link to another page](./testpage.html).
+[Link to another page](./_posts/testpage.html).
