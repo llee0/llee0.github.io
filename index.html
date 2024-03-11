@@ -14,6 +14,15 @@ author_profile: true
     max-width: 1280px; /* Limit the maximum width to 1280 pixels */
     height: auto; /* Maintain aspect ratio */
   }
+  .image-row {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Distribute images evenly */
+    align-items: center; /* Center vertically */
+  }
+  .image-row img {
+    max-width: 33%; /* Each image takes up one-third of the row */
+    height: auto; /* Maintain aspect ratio */
+  }
 </style>
 
 {% comment %} Body HTML {% endcomment %}
@@ -32,6 +41,14 @@ author_profile: true
   Your browser does not support the video tag.
 </video>
 {% endcomment %}
+<div class="image-row">
+  <img src="assets/images/equipment-5kg.jpg" alt="5kg Fluid Bed">
+  <img src="assets/images/equipment-30kg.jpg" alt="30kg Fluid Bed">
+  <img src="assets/images/equipment-300kg.jpg" alt="300kg Fluid Bed">
+</div>
+
+
+
 
 <p>Equipment Options<br>
 Available on 5kg-30kg-120kg-300kg-500kg Units<br>
