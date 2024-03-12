@@ -11,7 +11,7 @@ author_profile: true
 <style>
   video {
     width: 100%; /* Make the video responsive */
-    max-width: 1280px; /* Limit the maximum width to 1280 pixels */
+    // max-width: 1280px; /* Limit the maximum width to 1280 pixels */
     height: auto; /* Maintain aspect ratio */
   }
   .image-row {
@@ -23,6 +23,10 @@ author_profile: true
     max-width: 33%; /* Each image takes up one-third of the row */
     height: auto; /* Maintain aspect ratio */
   }
+  .responsive {
+    width: 100%;
+    height: auto;
+}
 </style>
 
 {% comment %} Body HTML {% endcomment %}
@@ -42,12 +46,13 @@ author_profile: true
 </video>
 {% endcomment %}
 <div class="image-row">
-  <img src="assets/images/equipment-5kg.jpg" alt="5kg Fluid Bed">
-  <img src="assets/images/equipment-30kg.jpg" alt="30kg Fluid Bed">
-  <img src="assets/images/equipment-300kg.jpg" alt="300kg Fluid Bed">
+  <img src="assets/images/cropped/equipment-5kg.jpg" alt="5kg Fluid Bed">
+  <img src="assets/images/cropped/equipment-30kg.jpg" alt="30kg Fluid Bed">
+  <img src="assets/images/cropped/equipment-300kg.jpg" alt="300kg Fluid Bed">
 </div>
 
-
+<img src="assets/images/cropped/building-parkdrive-se.jpg" alt="Park Drive SE View" class="responsive">
+<img src="assets/images/cropped/building-parkdrive-sw.jpg" alt="Park Drive SW View" class="responsive">
 
 
 <p>Equipment Options<br>
