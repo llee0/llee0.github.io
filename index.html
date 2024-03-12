@@ -9,11 +9,13 @@ author_profile: true
 {% comment %} Header HTML {% endcomment %}
 
 <style>
+  {% comment %} Agglomeration Videos {% endcomment %}
   video {
     width: 100%; /* Make the video responsive */
     // max-width: 1280px; /* Limit the maximum width to 1280 pixels */
     height: auto; /* Maintain aspect ratio */
   }
+  {% comment %} Equipment Examples {% endcomment %}
   .image-row {
     display: flex; /* Use flexbox for horizontal alignment */
     justify-content: space-between; /* Distribute images evenly */
@@ -26,22 +28,31 @@ author_profile: true
   .responsive {
     width: 100%;
     height: auto;
+  }
+  {% comment %} Contact Boxes Style {% endcomment %}
+  .contact-info {
+  display: flex;
+  }
+  .address, .emails {
+  flex: 1; /* Both elements will share available space equally */
+  padding: 10px; /* Add padding for spacing */
+  }
 }
 </style>
 
 {% comment %} Body HTML {% endcomment %}
 
 <video controls>
-  <source src="assets/videos/demo-agglomeration-fast.mp4" type="video/mp4">
+  <source src="assets/videos/demo-agglomeration-fast-muted.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 {% comment %}
 <video controls>
-  <source src="assets/videos/demo-agglomerationtop-fast.mp4" type="video/mp4">
+  <source src="assets/videos/demo-agglomerationtop-fast-muted.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 <video controls>
-  <source src="assets/videos/demo-encapsulation-fast.mp4" type="video/mp4">
+  <source src="assets/videos/demo-encapsulation-fast-muted.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 {% endcomment %}
@@ -51,10 +62,6 @@ author_profile: true
   <img src="assets/images/cropped/equipment-30kg.jpg" alt="30kg Fluid Bed">
   <img src="assets/images/cropped/equipment-300kg.jpg" alt="300kg Fluid Bed">
 </div>
-
-<img src="assets/images/cropped/building-parkdrive-se.jpg" alt="Park Drive SE View" class="responsive">
-<img src="assets/images/cropped/building-parkdrive-sw.jpg" alt="Park Drive SW View" class="responsive">
-
 
 <p>Equipment Options<br>
 Available on 5kg-30kg-120kg-300kg-500kg Units<br>
@@ -66,23 +73,7 @@ Automated material handling<br>
 In-line particle analysis<br>
 Easy-to-operate control systems</p>
 
-<p>LZL's dedicated facility provides research labs, piilot plants, and full scale commercial systems for prototype and toll processing.<br>
-New generation LZL fluid bed systems are optimized for customized applications.<br>
-Upgrade and automate your existing system for simpler process control and increased productivity.<br>
-LZL will assist you in floor plan design, equipment installation, staff training, post sales support and replacement parts.<br>
-LZL's innovative fluid bed technology and decades of industrial experience provides better agglomerated particle structure and superior dispersion and dissolution.<br>
-Efficient precision plating and wet cakedrying are an added advantage.<br>
-Superior particle coating in hot-melt and aqueous shell materials provide superior controlled release, controlled reactions, and product protection.</p>
 
-<p>LZL Engineering<br>
-Headquaraters & Technical Center<br>
-2300 Park Drive, Suite 300<br>
-Owatonna, MN 55060</p>
-
-<p>Melody K Hanson<br>
-VP Sales & Marketing<br>
-melody.hanson@lzlengineering.com<br>
-507-421-6919</p>
 
 <p>LZL Engineering<br>
 Your Particle Engineering Innovation Partner<br>
@@ -121,3 +112,35 @@ Controlled Release<br>
 Particle Protection<br>
 Particle Formation Characteristics<br>
 ...to enhance your bottom line with our proprietary technology.</p>
+
+
+
+
+
+
+<img src="assets/images/cropped/building-parkdrive-se.jpg" alt="Park Drive SE View" class="responsive">
+<img src="assets/images/cropped/building-parkdrive-sw.jpg" alt="Park Drive SW View" class="responsive">
+
+<p>LZL's dedicated facility provides research labs, piilot plants, and full scale commercial systems for prototype and toll processing.<br>
+New generation LZL fluid bed systems are optimized for customized applications.<br>
+Upgrade and automate your existing system for simpler process control and increased productivity.<br>
+LZL will assist you in floor plan design, equipment installation, staff training, post sales support and replacement parts.<br>
+LZL's innovative fluid bed technology and decades of industrial experience provides better agglomerated particle structure and superior dispersion and dissolution.<br>
+Efficient precision plating and wet cakedrying are an added advantage.<br>
+Superior particle coating in hot-melt and aqueous shell materials provide superior controlled release, controlled reactions, and product protection.</p>
+
+<div class="contact-info">
+  <div class="address">
+    LZL Engineering<br>
+    Headquarters & Technical Center<br>
+    2300 Park Drive, Suite 300<br>
+    Owatonna, MN 55060<br>
+    <!-- <a href="tel:+15074216919">(507) 421-6919</a> -->
+  </div>
+  <div class="emails">
+    Sales Inquiries<br>
+    <a href="mailto:sales@lzlengineering.com">sales@lzlengineering.com</a><br>
+    Careers<br>
+    <a href="mailto:info@lzlengineering.com">info@lzlengineering.com</a>
+  </div>
+</div>
