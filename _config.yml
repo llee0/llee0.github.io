@@ -24,7 +24,7 @@ url: "https://lzlengineering.com"
 # baseurl: "/docs" # the subpath of your site, e.g. /blog
 # twitter_username: username
 # github_username: username
-minimal_mistakes_skin: "dirt" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "mint" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 atom_feed:
   hide: true
 search: false
